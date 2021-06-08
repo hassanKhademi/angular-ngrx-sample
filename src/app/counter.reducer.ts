@@ -11,7 +11,7 @@ const _counterReducer = createReducer(
  (state,{val})=>  {
 
     console.log("newVlue",val,state);
-    return val+state
+    return val
 
  })
 )

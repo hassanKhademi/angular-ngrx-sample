@@ -1,10 +1,12 @@
-<h1>NgRx Tutorial</h1>
+<h1>NgRx sample counter</h1>
 <h2>{{count$|async}}</h2>
 
-<div >
-
+<div>
   <button (click)="incr()">incr</button>
   <button (click)="decr()">decr</button>
-  <button (click)=reset()>reset</button>
-  <button (click)="set()">set</button>
+  <button (click)="reset()">reset</button>
+  <div>
+    <input [(ngModel)]="customValue" type="number" />
+    <button (click)="set()">set</button>
+  </div>
 </div>
